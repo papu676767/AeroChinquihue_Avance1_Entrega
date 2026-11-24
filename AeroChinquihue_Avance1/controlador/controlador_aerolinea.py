@@ -1,8 +1,8 @@
-from model.avion import Avion
-from model.destino import Destino
-from model.vuelo import Vuelo
+from modelo.avion import avion
+from modelo.destino import destino
+from modelo.vuelo import vuelo
 
-class AerolineaController:
+class controlador_aerolinea:
     """Coordina los datos iniciales y operaciones básicas del sistema."""
 
     def cargar_destinos(self):
@@ -21,15 +21,15 @@ class AerolineaController:
             ("Chaitén", 50000, 15000),
             ("Santa Bárbara", 50000, 15000),
         ]
-        return {nombre: Destino(nombre, pasaje, encomienda)
+        return {nombre: destino(nombre, pasaje, encomienda)
                 for nombre, pasaje, encomienda in tarifas}
 
     def cargar_aviones(self):
         # Capacidades transcritas del enunciado del proyecto.
         return [
-            Avion("CESSNA 310", 5, 910),
-            Avion("CESSNA 208 CARAVAN", 9, 1315),
-            Avion("LET 410 UVP-E20", 19, 1800),
+            avion("CESSNA 310", 5, 910),
+            avion("CESSNA 208 CARAVAN", 9, 1315),
+            avion("LET 410 UVP-E20", 19, 1800),
         ]
 
     def cargar_vuelos_demo(self, destinos, aviones):
@@ -41,8 +41,8 @@ class AerolineaController:
         vuelos = []
         for i, nombre in enumerate(destinos_demo, start=1):
             avion = aviones[(i - 1) % len(aviones)]
-            vuelos.append(Vuelo(
-                codigo=f"AC-{i:03d}",
+            vuelos.append(vuelo(
+                codigo=f"ac-{i:03d}",
                 destino=destinos[nombre],
                 fecha="2026-11-25",
                 horario=f"{8 + ((i - 1) % 8):02d}:00",

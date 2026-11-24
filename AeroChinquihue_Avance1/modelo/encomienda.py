@@ -1,13 +1,13 @@
 from dataclasses import dataclass
-from model.destino import Destino
+from modelo.destino import destino
 
 @dataclass
-class Encomienda:
+class encomienda:
     """Paquete entregado en La Paloma para envío a un destino."""
     codigo: str
     remitente: str
     destinatario: str
-    destino: Destino
+    destino: destino
     peso_kg: float
     precio: int
     fecha_entrega: str = "Por confirmar"

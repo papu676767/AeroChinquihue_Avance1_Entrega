@@ -1,9 +1,9 @@
-from controller.aerolinea_controller import AerolineaController
-from view.consola_view import ConsolaView
+from controlador.controlador_aerolinea import controlador_aerolinea
+from vista.vista_consola import vista_consola
 
-def main():
-    controlador = AerolineaController()
-    vista = ConsolaView()
+def principal():
+    controlador = controlador_aerolinea()
+    vista = vista_consola()
 
     destinos = controlador.cargar_destinos()
     aviones = controlador.cargar_aviones()
@@ -15,4 +15,4 @@ def main():
     print("\nSistema AeroChinquihue: carga inicial completada.")
 
 if __name__ == "__main__":
-    main()
+    principal()

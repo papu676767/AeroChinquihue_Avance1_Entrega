@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 @dataclass
-class Destino:
+class destino:
     """Destino al que vuela AeroChinquihue, con sus tarifas."""
     nombre: str
     precio_pasaje: int

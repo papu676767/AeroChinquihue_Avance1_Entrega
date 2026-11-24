@@ -1,15 +1,15 @@
 from dataclasses import dataclass
-from model.avion import Avion
-from model.destino import Destino
+from modelo.avion import avion
+from modelo.destino import destino
 
 @dataclass
-class Vuelo:
+class vuelo:
     """Vuelo programado desde el Aeródromo La Paloma hacia un destino."""
     codigo: str
-    destino: Destino
+    destino: destino
     fecha: str
     horario: str
-    avion: Avion
+    avion: avion
     asientos_reservados: list[str]
 
     def asientos_disponibles(self):

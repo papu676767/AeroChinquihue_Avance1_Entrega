@@ -1,13 +1,13 @@
 from dataclasses import dataclass
-from model.pasajero import Pasajero
-from model.vuelo import Vuelo
+from modelo.pasajero import pasajero
+from modelo.vuelo import vuelo
 
 @dataclass
-class Reserva:
+class reserva:
     """Reserva de un asiento para un pasajero en un vuelo."""
     codigo: str
-    pasajero: Pasajero
-    vuelo: Vuelo
+    pasajero: pasajero
+    vuelo: vuelo
     asiento: str
     precio_final: int
     estado: str = "Pendiente"

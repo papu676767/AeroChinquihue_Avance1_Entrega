@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 @dataclass
-class Pasajero:
+class pasajero:
     """Cliente que solicita un pasaje."""
     rut: str
     nombre: str

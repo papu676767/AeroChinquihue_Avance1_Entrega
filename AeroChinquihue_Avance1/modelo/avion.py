@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 
 @dataclass
-class Avion:
+class avion:
     """Representa un avión disponible para realizar vuelos."""
     modelo: str
     capacidad_pasajeros: int
@@ -11,7 +11,7 @@ class Avion:
     def __post_init__(self):
         if not self.asientos:
             self.asientos = [f"{fila}{letra}" for fila in range(1, self.capacidad_pasajeros + 1)
-                             for letra in ("A",)]
+                             for letra in ("a",)]
         if self.capacidad_pasajeros <= 0 or self.capacidad_carga_kg <= 0:
             raise ValueError("Las capacidades del avión deben ser mayores que cero.")
 
