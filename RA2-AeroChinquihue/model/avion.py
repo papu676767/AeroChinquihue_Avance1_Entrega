@@ -2,7 +2,7 @@ from dataclasses import dataclass, field
 
 @dataclass
 class avion:
-    """Representa un avión disponible para realizar vuelos."""
+    """Representa un avion disponible para realisar vuelos."""
     modelo: str
     capacidad_pasajeros: int
     capacidad_carga_kg: float

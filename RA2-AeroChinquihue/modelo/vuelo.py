@@ -4,7 +4,7 @@ from modelo.destino import destino
 
 @dataclass
 class vuelo:
-    """Vuelo programado desde el Aeródromo La Paloma hacia un destino."""
+    """vuelo programado desde el aerodromo La Paloma hacia un destino"""
     codigo: str
     destino: destino
     fecha: str

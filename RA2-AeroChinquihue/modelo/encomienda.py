@@ -3,7 +3,7 @@ from modelo.destino import destino
 
 @dataclass
 class encomienda:
-    """Paquete entregado en La Paloma para envío a un destino."""
+    """Paquete entregado en La Paloma para envio a un destino."""
     codigo: str
     remitente: str
     destinatario: str

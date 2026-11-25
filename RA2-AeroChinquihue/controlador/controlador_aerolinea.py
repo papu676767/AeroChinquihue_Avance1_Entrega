@@ -3,7 +3,7 @@ from modelo.destino import destino
 from modelo.vuelo import vuelo
 
 class controlador_aerolinea:
-    """Coordina los datos iniciales y operaciones básicas del sistema."""
+    """Coordina datos iniciales y operaciones basicas del sistema."""
 
     def cargar_destinos(self):
         tarifas = [

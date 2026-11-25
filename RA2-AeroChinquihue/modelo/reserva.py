@@ -4,7 +4,7 @@ from modelo.vuelo import vuelo
 
 @dataclass
 class reserva:
-    """Reserva de un asiento para un pasajero en un vuelo."""
+    """reserva de un asiento para un pasajero en un vuelo"""
     codigo: str
     pasajero: pasajero
     vuelo: vuelo

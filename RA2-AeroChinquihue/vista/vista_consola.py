@@ -1,5 +1,5 @@
 class vista_consola:
-    """Vista sencilla para mostrar los datos en consola."""
+    """vista sencilla para mostrar los datos en consola"""
 
     def mostrar_destinos(self, destinos):
         print("\ndestinos y tarifas")

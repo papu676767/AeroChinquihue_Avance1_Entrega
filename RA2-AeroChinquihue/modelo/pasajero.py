@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 @dataclass
 class pasajero:
-    """Cliente que solicita un pasaje."""
+    """cliente que solicita un pasaje"""
     rut: str
     nombre: str
     telefono: str
