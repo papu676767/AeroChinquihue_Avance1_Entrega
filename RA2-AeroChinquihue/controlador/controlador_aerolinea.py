@@ -33,7 +33,7 @@ class controlador_aerolinea:
         ]
 
     def cargar_vuelos_demo(self, destinos, aviones):
-        """Datos de demostración para poblar la aplicación; no son horarios reales."""
+        """datos de demostración para poblar la aplicación (no son horarios reales)"""
         destinos_demo = ["Cochamó", "Puelo Bajo", "Contao", "Río Negro",
                          "Pupelde", "Chepu", "Ayacara", "Pillán",
                          "Reñihue", "Isla Quenac", "Palqui", "Chaitén",

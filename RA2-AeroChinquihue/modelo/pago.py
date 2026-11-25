@@ -6,4 +6,4 @@ class pago:
     codigo: str
     monto: int
     medio_pago: str
-    estado: str = "Registrado"
+    estado: str = "¡Registrado!"

@@ -23,5 +23,5 @@ class vuelo:
         if asiento not in self.avion.asientos:
             raise ValueError(f"El asiento {asiento} no existe en este avión.")
         if asiento in self.asientos_reservados:
-            raise ValueError(f"El asiento {asiento} ya está reservado.")
+            raise ValueError(f"el asiento {asiento} ya está reservado.")
         self.asientos_reservados.append(asiento)
